@@ -32,6 +32,7 @@
     this._triggerKeys = $.map(this._delimiters, function (delimiter) {
       return delimiter.charCodeAt(0);
     });
+    this._triggerKeys.push(65292);
 
     // Store original input width
     var elRules = (typeof window.getMatchedCSSRules === 'function') ? window.getMatchedCSSRules( element ) : null
